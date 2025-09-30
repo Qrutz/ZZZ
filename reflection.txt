@@ -1,0 +1,7 @@
+Reflection
+
+I. (WHAT DID YOU EXPERIENCE AND LEARN?)
+At first I thought this would be straightforward but the collision physics turned out way more complicated than expected. Once I broke down the coordinate transformations step by step it started making sense. Converting to polar coordinates, doing the collision math, then converting back. The helper functions rectToPolar and polarToRect that the assignment suggested really helped once I figured out how to use them properly. I learned that small bugs in the physics formulas can cause really weird behavior like balls gaining energy instead of losing it, or flying off in random directions. Tuning the damping coefficients took a lot of trial and error to get realistic bouncing behavior.
+
+II. (HOW WELL DID YOU SOLVE THE PROBLEM?)
+Good. The simulation works correctly with gravity pulling balls down, realistic collisions between balls and walls, and proper energy dissipation. The balls have different masses and bounce realistically. I implemented Euler's method for the differential equations, used coordinate transformations for collisions, and followed the conservation laws. The code compiles and runs without issues. I could have saved time by testing the coordinate transformation functions separately before using them in the collision code, since that's where most of my debugging time went.
